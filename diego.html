@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Digital | FLEET GROUP - Carlos Peña</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            /* Colores corporativos de FLEET GROUP extraídos de la tarjeta */
+            --primary-blue: #003366; /* Azul marino principal */
+            --accent-red: #D32F2F;   /* Rojo corporativo (aproximado) */
+            --dark-gray: #333333;
+            --light-bg: #F4F7F6;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .digital-card {
+            background-color: var(--white);
+            width: 100%;
+            max-width: 400px; /* Tamaño ideal para móvil */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Sombra elegante */
+            padding: 30px 20px;
+            text-align: center;
+            box-sizing: border-box;
+            border-top: 10px solid var(--primary-blue); /* Barra superior azul */
+        }
+        .header {
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* -- INSTRUCCIONES: Cambia la URL por tu logo real si lo tienes online -- */
+        .logo-placeholder {
+            font-weight: bold;
+            font-size: 24px;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+        .logo-sub-text {
+            color: var(--dark-gray);
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        .logo-dot {
+            color: var(--accent-red);
+            font-size: 20px;
+        }
+        /* Puedes habilitar esta clase si subes tu imagen de logo.png */
+        /* .logo-image { max-width: 150px; height: auto; margin-bottom: 15px; } */
 
+        .profile-info h1 {
+            color: var(--primary-blue);
+            margin: 0 0 5px 0;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .profile-info h2 {
+            color: var(--dark-gray);
+            margin: 0 0 25px 0;
+            font-size: 16px;
+            font-weight: 500;
+            border-bottom: 2px solid var(--primary-blue); /* Línea azul como la tarjeta física */
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .action-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* Espaciado entre botones */
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: var(--white);
+            color: var(--primary-blue);
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            border: 2px solid var(--primary-blue);
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-size: 16px;
+        }
+        /* Efectos al pasar el mouse/tocar */
+        .btn:hover, .btn:active {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        /* Botón WhatsApp especial (Verde) */
+        .btn-whatsapp {
+            border-color: #25D366;
+            color: #25D366;
+        }
+        .btn-whatsapp:hover, .btn-whatsapp:active {
+            background-color: #25D366;
+            color: var(--white);
+        }
+        .address-section {
+            text-align: left;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .address-header {
+            color: var(--primary-blue);
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .address-link {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-size: 13px;
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+        .address-link:hover, .address-link:active {
+            background-color: #e6f3ff;
+        }
+        .address-link i {
+            color: var(--accent-red);
+            margin-top: 3px;
+            font-size: 16px;
+        }
+        .address-link span {
+            line-height: 1.4;
+        }
+        .save-contact {
+            margin-top: 20px;
+        }
+        .btn-save {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+        }
+        .btn-save:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="digital-card">
+        <div class="header">
+            <div class="logo-placeholder">FLEET</div>
+            <div class="logo-sub-text">GROUP <span class="logo-dot">●</span></div>
+            </div>
+        
+        <div class="profile-info">
+            <h1>Carlos Andrés Peña Facundo</h1>
+            <h2>Jefe Delivery</h2>
+        </div>
+
+        <div class="action-links">
+            <a href="https://wa.me/51943783686?text=Hola%20Carlos,%20vi%20tu%20tarjeta%20digital." class="btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="mailto:cpena@fleetgroup.com.pe" class="btn">
+                <i class="far fa-envelope"></i> Enviar Correo
+            </a>
+
+            <a href="tel:+51943783686" class="btn">
+                <i class="fas fa-phone-alt"></i> Llamar Directo
+            </a>
+        </div>
+
+        <div class="address-section">
+            <div class="address-header">
+                <i class="fas fa-map-marker-alt"></i> Nuestras Ubicaciones (Click para Mapa)
+            </div>
+
+            <a href="https://maps.google.com/?q=JR.+CAMINO+REAL+N°+1801+Local+1+Mz.A+Lt.4+URB.+PARQUE+INDUSTRIAL+SAN+PEDRITO+I+-+SANTIAGO+DE+SURCO" class="address-link" target="_blank">
+                <i class="fas fa-map-pin"></i>
+                <span>JR. CAMINO REAL N° 1801 Local 1 Mz.A Lt.4 URB. PARQUE INDUSTRIAL SAN PEDRITO I - SANTIAGO DE SURCO</span>
+            </a>
+
+            <a href="https://maps.google.com/?q=CAR.+PANAMERICANA+SUR+2001,+KM.+38,+(ALMACEN+D-11)+PUNTA+HERMOSA,+PERU." class="address-link" target="_blank">
+                <i class="fas fa-map-pin"></i>
+                <span>CAR. PANAMERICANA SUR 2001, KM. 38, (ALMACEN D-11) PUNTA HERMOSA, PERU.</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
